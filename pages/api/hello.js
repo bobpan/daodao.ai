@@ -3,7 +3,7 @@
 export default function handler(req, res) {
   //res.status(200).json({ outputArguments: req.query.inputArguments })
   res.setHeader('Content-Type', 'application/json')
-  res.status(200).send({
+  res.status(200).json({
     "err_code": 0,                // 状态码，可在获得响应后区分下一步操作
     "data_list": [
       {                           // 目前返回信息需要包裹在 `data_list` 中唯一对象内
