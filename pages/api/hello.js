@@ -2,6 +2,7 @@
 
 export default function handler(req, res) {
   //res.status(200).json({ outputArguments: req.query.inputArguments })
+  res.setHeader('Content-Type', 'application/json')
   res.status(200).send({
     "err_code": 0,                // 状态码，可在获得响应后区分下一步操作
     "data_list": [
